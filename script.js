@@ -3,12 +3,12 @@ const numberOfDivs = prompt("Enter the number of divs:");
 
 function createDiv() {
     const div = document.createElement('div');
-    // div.style.opacity = 0.2;
+    div.style.opacity = 0.2;
     return div
 }
 const divs = document.querySelectorAll('.item');
 divs.forEach(div => {
-    
+
     let opacity = 0.2; // Initial opacity
 
     div.addEventListener('mouseenter', () => {
