@@ -3,6 +3,7 @@ const numberOfDivs = prompt("Enter the number of divs:");
 
 function createDiv() {
     const div = document.createElement('div');
+    div.style.backgroundColor = getRandomColor();
     return div
 }
 for(i=0; i<numberOfDivs; i++){
