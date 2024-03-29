@@ -8,6 +8,7 @@ function createDiv() {
 }
 const divs = document.querySelectorAll('.item');
 divs.forEach(div => {
+    
     let opacity = 0.2; // Initial opacity
 
     div.addEventListener('mouseenter', () => {
