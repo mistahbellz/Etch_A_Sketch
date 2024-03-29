@@ -3,10 +3,14 @@ const numberOfDivs = prompt("Enter the number of divs:");
 
 function createDiv() {
     const div = document.createElement('div');
-    div.style.opacity = 0.2;
     return div
 }
-const divs = document.querySelectorAll('.item');
+for(i=0; i<numberOfDivs; i++){
+
+    const box = createDiv();
+    container.appendChild(box);
+}
+const divs = document.querySelectorAll('#container > div');
 divs.forEach(div => {
 
     let opacity = 0.2; // Initial opacity
