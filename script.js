@@ -4,6 +4,7 @@ const numberOfDivs = prompt("Enter the number of divs:");
 function createDiv() {
     const div = document.createElement('div');
     div.style.backgroundColor = getRandomColor();
+    div.style.opacity = 0.1;
     return div
 }
 for(i=0; i<numberOfDivs; i++){
@@ -30,3 +31,7 @@ divs.forEach(div => {
     //     div.style.opacity = opacity;
     // });
 });
+function getRandomColor() {
+    // Generate a random hexadecimal color code
+    return '#' + Math.floor(Math.random()*16777215).toString(16);
+}
